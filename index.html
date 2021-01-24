@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Face Recognition</title>
+    <link rel="shortcut icon" type="image/png" href="icon.png">
+    <link rel="stylesheet" href="style.css"></link>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <img id="try" src="img/list.png">
+    <img id="logo" src="img/logo.png" width="700px" height="540px">
+
+    <div class="circle">
+        <div class="uploadImage"></div>
+        <form id="image-form" action="">
+            <label class="file-style">
+            <input type="file" id="upload-image" onchange="upload(this.files[0])" >
+            UPLOAD
+        </label>
+        </form>
+        <img id="uploadPreview" width="200px" height="130px">
+        <span id="nameSpan"></span>
+        <span id="probSpan"></span>
+    </div>
+    <div class="nameList">
+    </div>
+</body>
+<!-- upload(this.files[0]) -->
+
+</html>
